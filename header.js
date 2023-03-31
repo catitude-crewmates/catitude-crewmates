@@ -1,7 +1,7 @@
-// Load the header from the header.html file and insert it into the div with id="header"
+// Load the header from the ./ file and insert it into the div with id="header"
 document.addEventListener("DOMContentLoaded", function() {
     var header = document.querySelector("#header");
-    header.innerHTML = '<object type="text/html" data="header.html" ></object>';
+    header.innerHTML = '<object type="text/html" data="./" ></object>';
   });
   
 
