@@ -1,0 +1,313 @@
+/* set the whole page to be dark grey with white text */
+  
+body {
+  background-color: #fff;
+  color: #000000;
+  margin:20px, 20px;
+}
+
+header {
+  display: flex;
+}
+
+header a {
+  width: 90px;
+  height: 90px;
+}
+
+.logo-container {
+  margin-right: 15px;
+}
+
+.flex-item {
+  flex-shrink: 0;
+}
+
+/* Set the background color and add padding to the header */
+header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+/* Style the navigation menu */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+#logo-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+p {
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+label, input, textarea {
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #fbb347;
+  color: rgb(52, 52, 52);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #fbb347;
+}
+
+.site-footer {
+  background-color: #fff;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media > a {
+  margin: 20px 20px;
+}
+
+.product {
+  overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.product img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.product h3 {
+	margin: 0;
+}
+
+.product p {
+	margin: 5px 0;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #666;
+}
+
+.cathouse-image-container {
+  display: flex;
+}
+
+.cathouse-image-container img {
+  margin-right: 20px;
+}
+.Halloween_photos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.Christmas_photos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.winter_photos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.lego_photos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.punk {
+  width: 400px;
+  height: auto;
+}
+.punk_photos {
+  display: flex;
+  justify-content: center;
+}
+
+.side-by-side {
+  width: 48%;
+  margin: 0;
+  padding: 0;
+}
+
+.christmas_description {
+  overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.halloween_description {
+  overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.winter_description {
+  overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.punk_description {
+  overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.lego_description {
+  overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.instagram_icon {
+  width: 90px;
+}
+.tiktok_icon {
+  width: 340px;
+}
+.youtube_icon {
+  width: 250px;
+}
+.venmo_icon {
+  width: 90px;
+}
+.paypal_icon {
+  width: 390px;
+}
+.gofundme_icon {
+  width: 300px;
+}
+
+.form_container{
+  display: flex;
+  align-items: center;
+}
+
+.form_container > img {
+  height: 500px;
+  width: auto;
+  padding: 20px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 20px;
+}
+
+#cat-image {
+  height: 400px;
+  width: 400px;
+}
+
+.sentence1 {
+  flex: 1;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.header-links {
+  font: 20px;
+}
+
+.header-links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.header-links a:hover {
+  border-bottom: 2px solid #000000;
+}
+.current {
+  border-bottom: 2px solid #000000;
+}
+.boba {
+  display:flex;
+}
+.boba_text {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.me_bgc {
+  background-color: #F2F2F2;
+}
+.joey_bgc {
+  background-color: #F2F2F2;
+}
+.boba_bgc {
+  background-color: #F2F2F2;
+}
