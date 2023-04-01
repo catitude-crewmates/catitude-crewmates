@@ -193,6 +193,10 @@ button:hover {
   display: flex;
   justify-content: center;
 }
+.food_photos {
+  display: flex;
+  justify-content: center;
+}
 
 .side-by-side {
   width: 48%;
@@ -243,6 +247,13 @@ button:hover {
 	margin-bottom: 30px;
 }
 .leash_description {
+  overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.food_description {
   overflow: auto;
 	display: flex;
 	flex-direction: column;
@@ -351,6 +362,7 @@ button:hover {
   
   #cat-image {
     width: 100%;
+    height:auto;
   }
   .sentence1 {
     flex: 1;
