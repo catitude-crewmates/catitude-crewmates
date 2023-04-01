@@ -171,6 +171,11 @@ button:hover {
   display: flex;
   justify-content: space-around;
 }
+.leash_photos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .punk {
   width: 400px;
   height: auto;
@@ -215,6 +220,13 @@ button:hover {
 	margin-bottom: 30px;
 }
 .lego_description {
+  overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.leash_description {
   overflow: auto;
 	display: flex;
 	flex-direction: column;
@@ -311,3 +323,19 @@ button:hover {
 .boba_bgc {
   background-color: #F2F2F2;
 }
+
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+}
+
+
+

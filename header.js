@@ -1,129 +1,11 @@
-// Load the header from the ./ file and insert it into the div with id="header"
-document.addEventListener("DOMContentLoaded", function() {
-    var header = document.querySelector("#header");
-    header.innerHTML = '<object type="text/html" data="./" ></object>';
-  });
-  
-
-/*
-  // Define an array to store the shopping cart items
-var shoppingCart = [];
-
-// Define a function to add items to the shopping cart
-function addToCart(itemName, itemPrice) {
-  // Create an object to represent the item
-  var item = {
-    name: itemName,
-    price: itemPrice
-  };
-  
-  // Add the item to the shopping cart array
-  shoppingCart.push(item);
-}
-
-// Define a function to display the shopping cart
-function displayCart() {
-  // Get the element to display the cart
-  var cartElement = document.getElementById("cart");
-
-  // Clear the previous content of the cart element
-  cartElement.innerHTML = "";
-
-  // Loop through the shopping cart array and display each item
-  for (var i = 0; i < shoppingCart.length; i++) {
-    var item = shoppingCart[i];
-    var itemElement = document.createElement("div");
-    itemElement.innerHTML = item.name + " - $" + item.price;
-    cartElement.appendChild(itemElement);
-  }
-}
-
-// Call the addToCart function to add an item
-addToCart("Product 1", 9.99);
-
-// Call the addToCart function to add another item
-addToCart("Product 2", 19.99);
-
-// Call the displayCart function to display the shopping cart
-displayCart();
-
-// Define an empty array to store the cart items
-let cartItems = [];
-
-// Get all the add-to-cart buttons
-const addToCartButtons = document.querySelectorAll('.add-to-cart');
-
-// Loop through all the add-to-cart buttons
-addToCartButtons.forEach(button => {
-  // Add a click event listener to each button
-  button.addEventListener('click', () => {
-    // Get the product details
-    const productContainer = button.parentElement.parentElement;
-    const productName = productContainer.querySelector('.product-name').innerText;
-    const productPrice = productContainer.querySelector('.product-price').innerText;
-
-    // Add the product details to the cartItems array
-    cartItems.push({name: productName, price: productPrice});
-
-    // Update the cart
-    updateCart();
-  });
-});
-
-// Get the cart table and the total price element
-const cartTable = document.querySelector('#cart-table');
-const totalPriceElement = document.querySelector('#total-price');
-
-// Function to update the cart
-function updateCart() {
-  // Clear the cart table
-  cartTable.innerHTML = '';
-
-  // Calculate the total price
-  let totalPrice = 0;
-
-  // Loop through all the cart items and add them to the cart table
-  cartItems.forEach(item => {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td>${item.name}</td>
-      <td>${item.price}</td>
-      <td><button class="remove-from-cart" data-name="${item.name}">Remove</button></td>
-    `;
-    cartTable.appendChild(row);
-
-    // Add the item price to the total price
-    totalPrice += parseFloat(item.price);
-  });
-
-  // Update the total price element
-  totalPriceElement.innerText = totalPrice.toFixed(2);
-
-  // Get all the remove-from-cart buttons
-  const removeFromCartButtons = document.querySelectorAll('.remove-from-cart');
-
-  // Loop through all the remove-from-cart buttons
-  removeFromCartButtons.forEach(button => {
-    // Add a click event listener to each button
-    button.addEventListener('click', () => {
-      // Get the name of the item to remove
-      const itemName = button.getAttribute('data-name');
-
-      // Remove the item from the cartItems array
-      cartItems = cartItems.filter(item => item.name !== itemName);
-
-      // Update the cart
-      updateCart();
-    });
-  });
-}
-
-*/
 
 document.addEventListener("DOMContentLoaded", function() {
   const animateTime = 30;
 
   const element = document.getElementById("animate");
+  if (!element) {
+    return
+  }
   element.innerText = "";
   const text = "Cats are often overlooked and underrepresented in our world, and many of them do not have a loving home to call their own. It's important to raise awareness and encourage others to care for these furry feline friends. Whether through adoption, volunteering at a shelter, or simply spreading the word, we can all make a difference in the lives of these precious animals. Let's work together to ensure that all cats receive the love and care they deserve!!"
   for (let i = 0; i < text.length; i++) {
@@ -189,3 +71,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }, animateTime * (i + text.length + text2.length + text3.length + text4.length + text5.length))
   }
 })
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const icons = ["❤️", "🐈‍⬛", "🐈", "🐾", "🐱"];
+  const iconElement = document.getElementById("icon-changer");
+  if (!iconElement) {
+    return
+  }
+  let iconIndex = 0;
+  const setIcon = () => {
+    iconElement.innerText = icons[iconIndex]
+    iconIndex = (iconIndex + 1) % icons.length;
+  }
+  setIcon()
+  window.setInterval(() => {
+    setIcon();
+  }, 1000)
+});
